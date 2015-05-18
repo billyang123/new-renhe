@@ -1,0 +1,49 @@
+{
+  "name": "renhe_assets",
+  "version": "0.0.1",
+  "authors": [
+    "yangbinbin <yangbinbin_1226@126.com>"
+  ],
+  "description": "人和前端框架构建工具",
+  "main": "app",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "jquery-ujs": "~1.0.3",
+    "bootstrap": "~3.3.4",
+    "handlebars": "~3.0.3"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "js/transition.js",
+        "js/tab.js",
+        "js/alert.js",
+        "js/collapse.js",
+        "js/carousel.js"
+      ]
+    },
+    "jquery-ujs": {
+      "main": [
+        "src/rails.js"
+      ]
+    },
+    "handlebars":{
+      "main": [
+        "handlebars.js"
+      ]
+    }
+  }
+}

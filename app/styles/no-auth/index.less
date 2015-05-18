@@ -1,0 +1,222 @@
+@import "../modules/mixins.less";
+.main-header {
+	height: 853px;
+  	max-height: 100%;
+  	position: relative;
+}
+
+.renhe-no-auth {
+	.center-block();
+	width:435px;
+
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -212px;
+	.alert {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		  margin-bottom: 5px;
+	}
+	.renhe-logo {
+		background-image: url(/_public/images/renhe_logo_260x130.png);
+		width: 260px;
+		height: 130px;
+		.center-block();
+	}
+	.renhe-login-title {
+		color: #FFF;
+		font-size: 18px;
+		letter-spacing: 28px;
+  		padding-left: 28px;
+  		margin-top: 24px;
+  		margin-bottom: 46px;
+	}
+	.tab-content {
+		background-color: #FFF;
+		.tab-pane {
+			padding-top: 1px;
+		}
+	}
+	.nav-tabs {
+		> li {
+			> a {
+				background-color: rgba(5, 5, 5, 0.5);
+				border: 1px solid transparent;
+				border-bottom-color: transparent;
+				color: rgba(225, 225, 225, 0.8);
+				margin-right: 0;
+				border-radius: inherit;
+				padding: 0;
+				line-height: 59px;
+				width: 145px;
+				font-size: 18px;
+				text-align: center;
+			}
+			& > a:hover {
+				color: #fffefe;
+			}
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					background-color: #FFF;
+					color: #707070;
+					border-bottom-color: #f7f7f7;
+				}
+			}
+		}
+	}
+	.inpt {
+		position: relative;
+		padding: 8px 16px;
+
+	}
+	.register-content {
+		padding: 10px 65px 20px 65px;
+	}
+	.login-content {
+		padding: 10px 65px;
+	}
+	.login-content,.register-content {
+		.list-group {
+			margin-bottom: 10px;
+		}
+		.list-group-item {
+			border-radius: 0;
+			input {
+				width: 270px;
+			} 
+		}
+		button[type="submit"] {
+			width: 100%;
+			border-radius: 0;
+		}
+	}
+}
+.w-icon {
+	background-image: url("/_public/images/prosprite.png");
+	width: 102px;
+	height: 102px;
+	display: inline-block;
+	&-trm {
+		background-position: -17px 0;
+	}
+	&-zzz {
+		background-position: -142px 0;
+	}
+	&-xsj {
+		background-position: -265px 0;
+	}
+	&-lxm {
+		background-position: -386px 0;
+	}
+	&-qhd {
+		background-position: -515px 0;
+	}
+	&-pig {
+		background-position: 0 -142px;
+	}
+	&-book {
+		background-position: -169px -142px;
+	}
+	&-set {
+		background-position: -335px -142px;
+	}
+	&-user {
+		background-position: -503px -142px;
+	}
+	&-www {
+		background-position: -670px -142px;
+	}
+}
+.renhe-info-main{
+	padding-top: 30px;
+	border-bottom: 1px solid #d9dae0;
+	padding-bottom: 70px;
+	h2.w-title {
+		font-size: 45px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	p.w-sub {
+		.center-block();
+		text-align: center;
+		font-size: 18px;
+		line-height: 38px;
+		
+	}
+	.rh-info-list {
+		.clearfix();
+		margin-top: 60px;
+		> li {
+			height: 220px;
+			float: left;
+			text-align: center;
+			&.col-md-6 {
+				margin-top: 80px;
+			}
+			&.col-md-4 .w-con {
+				width: 70%;
+			}
+			&.col-md-6 .w-con {
+				width: 50%;
+			}
+			.w-con {
+				.center-block();
+				> h3 {
+					margin: 12px 0 25px 0;
+				}
+				> p {
+					font-size: 16px;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+	.rh-circle-list {
+
+		.center-block();
+		width: 850px;
+		margin-top: 45px;
+		margin-bottom: 28px;
+		> li {
+			float: left;
+			margin: 0 34px;
+			> a {
+				position: relative;
+			}
+			> a:hover {
+				background-position-y:-282px;
+				.rh-arrow {
+					display: inline-block;
+				}
+			}
+			.rh-arrow {
+				display: none;
+				position: absolute;
+				bottom: -44px;
+				left: 50%;
+				border: 11px solid transparent;
+				margin-left: -11px;
+				border-top-color: #fff;
+				border-bottom: 0;
+				
+			}
+		}
+	}
+	.rh-circle-content {
+		.cc-img-info {
+			padding: 150px 100px;
+		}
+
+	}
+}
+.renhe-reg-login {
+	padding: 10px 61px;
+  	font-size: 18px;
+}
+.renhe-app-download {
+	padding-top: 45px;
+	.clearfix();
+}
